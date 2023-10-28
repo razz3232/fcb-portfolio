@@ -1,0 +1,32 @@
+/* In CSS we use 'selectors' to target a specific HTML tag for styling */
+/* The asterisk symbol stands for 'all' which will target all HTML tags */
+* {
+	font-family: "Montserrat", sans-serif;
+}
+
+/* When selecting an HTML tag using its ID, we use the '#' symbol */
+/* When selecting an HTML tag using its class, we use the '.' symbol */
+#profile {
+	height: 250px;
+	width: 250px;
+
+/* Resposible for making the img tag circular */
+	border-radius: 50%;
+}
+
+body {
+	background-color: #000000;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23220000' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23440000' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23660000' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23880000' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23A00' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+}
+
+#landing {
+	height: 80vh;
+
+    /* Centers the content vertically using flexbox */
+	display: flex;
+	flex-direction: column; /* Column is equal to Y-Axis or Top-to-Bottm*/
+	justify-content: center;
+	align-items: center;
+}
